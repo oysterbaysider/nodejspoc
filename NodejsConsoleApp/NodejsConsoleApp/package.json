@@ -5,5 +5,8 @@
   "main": "app.js",
   "author": {
     "name": "tli"
+  },
+  "dependencies": {
+    "request": "^2.83.0"
   }
 }

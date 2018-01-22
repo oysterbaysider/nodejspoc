@@ -11,7 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fb32c59c-dc66-40eb-b39a-1ab7733f858b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>eventloop.js</StartupFile>
+    <StartupFile>event\event1.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -28,10 +28,33 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="app.js" />
-    <Compile Include="eventloop.js" />
+    <Compile Include="builtins\built-ins-1.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="builtins\mathfun.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="builtins\module1.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="builtins\module2.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="event\event1.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="intro\app.js" />
+    <Compile Include="intro\callback.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="intro\eventloop.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="intro\" />
+    <Folder Include="builtins\" />
+    <Folder Include="event\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
